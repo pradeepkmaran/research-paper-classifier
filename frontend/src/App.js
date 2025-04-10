@@ -20,10 +20,7 @@ export default function App() {
   const fetchAvailableModels = async () => {
     try {
       setModelLoading(true);
-      const response = await fetch("https://hybrid-unity-456403-r1.rj.r.appspot.com/models/", {
-        method: "GET",
-        mode: "no-cors"
-      });
+      const response = await fetch("https://hybrid-unity-456403-r1.rj.r.appspot.com/models/");
       if (!response.ok) {
         throw new Error("Failed to fetch available models");
       }
