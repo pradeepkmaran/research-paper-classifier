@@ -3,11 +3,7 @@
     "api/main.py": {
       "runtime": "python3.9",
       "maxDuration": 10,
-      "includeFiles": [
-        "models/ensemble/**",
-        "models/preprocessing/**",
-        "models/traditional/**"
-      ]
+      "includeFiles": "models/**"
     }
   },
   "buildCommand": "pip install -r requirements.txt -t .",
