@@ -20,7 +20,7 @@ export default function App() {
   const fetchAvailableModels = async () => {
     try {
       setModelLoading(true);
-      const response = await fetch("https://hybrid-unity-456403-r1.rj.r.appspot.com/models/");
+      const response = await fetch("https://research-paper-classifier-17ft.vercel.app/models/");
       if (!response.ok) {
         throw new Error("Failed to fetch available models");
       }
